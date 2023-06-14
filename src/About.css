@@ -1,0 +1,10 @@
+.About{
+    width: 400px; /* Adjust the width and height as desired */
+    height: 200px;
+    /* background-color: #f0f0f0; Set the background color for the square */
+    /* display:flex; */
+    margin-top: 6%;
+    margin-left: 75%;
+    /* justify-content: center;
+    align-items: right; */
+  }

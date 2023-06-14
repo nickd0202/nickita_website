@@ -1,0 +1,71 @@
+/* light bulb  */
+#bulb {
+    width: 5%;
+    margin-left: 90%;
+    margin-top: 20px;
+  } 
+  .filament {
+    transition: all 0.2s ease;
+  }
+  .cls-5 {
+    transition: all 1s ease;
+  }
+  #toggle:checked ~ body {
+    background-color: red;
+  }
+  #toggle:checked ~ #bulb .filament {
+    fill: orange;
+  }
+  #toggle:checked ~ #bulb .cls-5 {
+    fill: #fff78c;
+  }
+  .prong {
+    fill: #6d6e71;
+  }
+  .cls-2 {
+    fill: #808285;
+  }
+  .cls-3 {
+    fill: #939598;
+  }
+  .cls-4 {
+    opacity: 0.51;
+  }
+  .cls-5 {
+    fill: #d1d3d4;
+  }
+  #toggle {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    left: -100%;
+    top: -100%;
+  }
+  #toggle + label {
+    font-family: sans-serif;
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 100px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 26px 10px;
+    font-size: 15px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border: 2px solid black;
+    border-bottom: 30px solid black;
+  }
+  #toggle + label:after {
+    content: "OFF"
+  }
+  #toggle:checked + label {
+    border-top: 30px solid black;
+    border-bottom: 3px solid black;
+  }
+  #toggle:checked + label:after {
+    content: "ON";
+  }

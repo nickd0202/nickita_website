@@ -11,15 +11,16 @@ import {Route, Switch} from "react-router-dom"
 function App() {
   
   const [theme, setTheme] = useState('dark');
-  const [wordColor, setColor] = useState('dark');
+  const [wordColor, setColor] = useState('1')
 
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
-      setColor('light');
+      setColor('1')
+
     } else {
       setTheme('light');
-      setColor('dark');
+      setColor('2')
     }
   };
 

@@ -2,19 +2,15 @@
     display:flex;
     margin-left: 45%;
     margin-top: 1%;
-    color: #ffffff;
     text-shadow:
     0 0 10px #000;    
-    /* 0 0 5px #fff,
-    0 0 50px #0ff,
-    0 0 100px #0ff; */
     animation: glow 8s infinite
 }
 .neon2 {
     display:flex;
     margin-left: 43%;
     margin-top: 1%;
-    color: #ffffff;
+    /* color: #ffffff; */
     text-shadow:
     0 0 10px #000;
     /* 0 0 5px #fff,
@@ -23,20 +19,12 @@
     animation: glow 8s infinite
 
 }
-
-/* .intro {
-    display:flex;
-    margin-left: 35%;
-    margin-top: 1%;
-    color: #ffffff;
-    text-shadow:
-      0 0 10px #000,
-      0 0 5px #fff,
-      0 0 50px rgb(255, 60, 0),
-      0 0 100px rgb(255, 60, 0);
-
-} */
-
+#1 {
+  color: white;
+}
+#2 {
+  color: black;
+}
 @keyframes glow{
     0% {
       text-shadow:      

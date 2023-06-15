@@ -16,9 +16,10 @@ function App() {
         <Route exact path="/">
               <Lightbulb />
               <Nav />
-              <div className='names'>
-                <h1 class = "FN"> Nickita</h1>
-                <h1 class = "LN"> Danilovich</h1>
+              <div>
+              
+                <h2 class = "FN"> Nickita</h2>
+                <h2 class = "LN"> Danilovich</h2>
               </div>
         </Route>
 

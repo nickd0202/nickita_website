@@ -1,44 +1,56 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Projects from './Projects'
 import About from './About'
 import Socials from './Socials'
 import Nav from './Nav'
 import Lightbulb from './Lightbulb'
+import Names from './Names'
 import './App.css';
 import {Route, Switch} from "react-router-dom"
 
 function App() {
+  
+  const [theme, setTheme] = useState('dark');
+  const [wordColor, setColor] = useState('dark');
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      setColor('light');
+    } else {
+      setTheme('light');
+      setColor('dark');
+    }
+  };
+
+
 
   return (
     <div>
       <Switch>
 
         <Route exact path="/">
-              <Lightbulb />
+              <Lightbulb toggleTheme = {toggleTheme} theme={theme} setTheme={setTheme}/>
               <Nav />
-              <div>
-              
-                <h2 class = "FN"> Nickita</h2>
-                <h2 class = "LN"> Danilovich</h2>
-              </div>
+              <Names wordColor={wordColor}/>
         </Route>
 
         <Route path='/about'>
-          <Lightbulb />
+          <Lightbulb toggleTheme = {toggleTheme} theme={theme} setTheme={setTheme}/>
           <Nav />
-          <About />
+          <About wordColor={wordColor}/>
         </Route>
 
         <Route path='/projects'>
-          <Lightbulb />
+          <Lightbulb toggleTheme = {toggleTheme} theme={theme} setTheme={setTheme}/>
           <Nav />
-          <Projects />
+          <Projects wordColor={wordColor}/>
         </Route>
 
         <Route path='/contact'>
-          <Lightbulb />
+          <Lightbulb toggleTheme = {toggleTheme} theme={theme} setTheme={setTheme}/>
           <Nav />
-          <Socials />
+          <Socials wordColor={wordColor}/>
         </Route>
 
     </Switch>

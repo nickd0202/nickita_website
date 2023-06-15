@@ -1,19 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import './Lightbulb.css'
 
 
-function Lightbulb(){
-
-
-const [theme, setTheme] = useState('dark');
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  };
+function Lightbulb({toggleTheme, theme, setTheme}){
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
